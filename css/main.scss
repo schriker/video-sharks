@@ -406,8 +406,8 @@ input[type="text"]:focus {
     padding: 50px 60px;
     text-align: center;
     flex-direction: column;
-    border-top: 3px solid transparent;
     transition: .2s ease all;
+    border-top: 3px solid transparent;
     &__wrapper {
         margin: 30px 0 120px 0;
     }
@@ -416,12 +416,13 @@ input[type="text"]:focus {
     }
     p {
         flex: 1 0 auto;
-        margin: 30px 0;
+        margin: 20px 0;
     }
     &__coin {
         opacity: .5;
         height: 40px;
         margin: 0 10px 0 0;
+        transition: .2s ease all;
     }
     &__price-tag {
         margin: 20px 0;
@@ -442,6 +443,12 @@ input[type="text"]:focus {
         .pricing__coin {
             opacity: 1;
         }
+    }
+}
+
+.our-process {
+    img {
+        height: 160px;
     }
 }
 

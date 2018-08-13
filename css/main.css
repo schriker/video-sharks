@@ -444,9 +444,9 @@ input[type="text"]:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-top: 3px solid transparent;
   -webkit-transition: .2s ease all;
   transition: .2s ease all;
+  border-top: 3px solid transparent;
 }
 
 .pricing__wrapper {
@@ -461,13 +461,15 @@ input[type="text"]:focus {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .pricing__coin {
   opacity: .5;
   height: 40px;
   margin: 0 10px 0 0;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
 }
 
 .pricing__price-tag {
@@ -493,6 +495,10 @@ input[type="text"]:focus {
 
 .pricing--active .pricing__coin {
   opacity: 1;
+}
+
+.our-process img {
+  height: 160px;
 }
 
 .comapnies {
