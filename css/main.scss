@@ -110,7 +110,7 @@ input[type="text"]:focus {
     &--large-spacing {
         font-size: 18px;
         line-height: 21px;
-        padding: 20px 50px;
+        padding: 20px 45px;
     }
 }
 
@@ -396,7 +396,52 @@ input[type="text"]:focus {
         }
     }
     &__more {
-        margin: 30px 0 130px 0;
+        margin: 30px 0 100px 0;
+    }
+}
+
+.pricing {
+    height: 100%;
+    display: flex;
+    padding: 50px 60px;
+    text-align: center;
+    flex-direction: column;
+    border-top: 3px solid transparent;
+    transition: .2s ease all;
+    &__wrapper {
+        margin: 30px 0 120px 0;
+    }
+    a {
+        opacity: 0;
+    }
+    p {
+        flex: 1 0 auto;
+        margin: 30px 0;
+    }
+    &__coin {
+        opacity: .5;
+        height: 40px;
+        margin: 0 10px 0 0;
+    }
+    &__price-tag {
+        margin: 20px 0;
+        display: block;
+        font-size: 60px;
+        line-height: 64px;
+        font-weight: bold;
+        color: $main-green;
+    }
+    &--active {
+        cursor: pointer;
+        background-color: $white;
+        border-top: 3px solid $main-blue;
+        box-shadow: 0 7px 24px 0 rgba(83,83,83,0.1);
+        a {
+            opacity: 1;
+        }
+        .pricing__coin {
+            opacity: 1;
+        }
     }
 }
 

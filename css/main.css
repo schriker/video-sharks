@@ -93,7 +93,7 @@ input[type="text"]:focus {
 .main-btn--large-spacing {
   font-size: 18px;
   line-height: 21px;
-  padding: 20px 50px;
+  padding: 20px 45px;
 }
 
 .text-light {
@@ -430,7 +430,69 @@ input[type="text"]:focus {
 }
 
 .portfolio__more {
-  margin: 30px 0 130px 0;
+  margin: 30px 0 100px 0;
+}
+
+.pricing {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 60px;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 3px solid transparent;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+.pricing__wrapper {
+  margin: 30px 0 120px 0;
+}
+
+.pricing a {
+  opacity: 0;
+}
+
+.pricing p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 30px 0;
+}
+
+.pricing__coin {
+  opacity: .5;
+  height: 40px;
+  margin: 0 10px 0 0;
+}
+
+.pricing__price-tag {
+  margin: 20px 0;
+  display: block;
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: bold;
+  color: #1FDB84;
+}
+
+.pricing--active {
+  cursor: pointer;
+  background-color: #fff;
+  border-top: 3px solid #0A8AFF;
+  -webkit-box-shadow: 0 7px 24px 0 rgba(83, 83, 83, 0.1);
+          box-shadow: 0 7px 24px 0 rgba(83, 83, 83, 0.1);
+}
+
+.pricing--active a {
+  opacity: 1;
+}
+
+.pricing--active .pricing__coin {
+  opacity: 1;
 }
 
 .comapnies {
