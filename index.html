@@ -15,6 +15,410 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-
+    <div class="container-fluid hero">
+        <div class="container page-header">
+            <header class="row justify-content-between align-items-center">
+                <div class="col-2">
+                    <a class="page-header__logo" href="#">
+                        <img class="img-fluid" src="img/nav-logo.png" alt="Video Sharks Logo">
+                    </a>
+                </div>
+                <div class="col-9">
+                    <nav>
+                        <ul class="page-header__navigation">
+                            <li><a href="#">Why Us</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Our Process</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="row justify-content-between align-items-center page-header__content">
+                <div class="col-6">
+                    <h2>Small Studio. Big Passion. <br> Your diamond in the rough.</h2>
+                    <p>Let's brainstorm, call now. If I can't immediately talk, I'll ring you back within a few hours!</p>
+                    <ul class="page-header__list">
+                        <li>Meet your copywriter & producer.</li>
+                        <li>8 years of experience, hundreds of videos.</li>
+                        <li>Call Now, we only take on a few projects a month.</li>
+                    </ul>
+                    <div class="d-flex align-items-center page-header__buttons">
+                        <a class="main-btn main-btn--medium-spacing" href="#">Let’s do it!</a>
+                        <a href="#"><img src="img/play-icon.png" alt="Play Icon"> Watch How it Works</a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="contact-form">
+                        <div class="contact-form__details d-flex align-items-center">
+                            <div class="contact-form__avatar">
+                                <img src="img/user-avatar-1.png" alt="User Photo">
+                            </div>
+                            <div>
+                                <p>Talk to your creative director, not a saleman!</p>
+                                <span class="contact-form__phone"><img src="img/contact-icon.png" alt="Phone Icon">1-(800)-962-1668</span>
+                            </div>
+                        </div>
+                        <form action="">
+                            <input type="text" name="name" id="name" placeholder="Full Name">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <textarea name="message" id="message" cols="30" rows="2" placeholder="Message"></textarea>
+                            <input class="main-btn" type="submit" value="Send Now">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid gradient-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="quote">
+                        <div class="d-flex align-items-center quote__author">
+                            <div>
+                                <img class="img-fluid" src="img/user-avatar-2.png" alt="Quote Author Photo">
+                            </div>
+                            <div class="quote__details">
+                                <span class="bold-text">Sébastien Bisch</span>
+                                <p>Vice President Marketing - LULU Software</p>
+                            </div>
+                        </div>
+                        <div class="quote__content">
+                            <p>Adding an explainer video from TheVideoSharks.com on our landing page helped <span class="text-blue">increase our conversions & revenue per user by 30%!</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-7 text-center">
+                    <h2>Why you should choose us?</h2>
+                    <p>Small creative studio focused on videos that increase revenue.  From start to finish planning out how to artistically capture attention, while using marketing analytics and logic to find ROI.  Work as an extension of your team and mind.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 text-center reasons">
+                    <img class="img-fluid" src="img/unlimited-revisions.png" alt="Unlimited Revisions">
+                    <h4>Unlimited Revisions</h4>
+                    <p>Creativity requires flexibility. Our process accommodates the fact that. Don't stress, we've got you covered.</p>
+                </div>
+                <div class="col-4 text-center reasons">
+                    <img class="img-fluid" src="img/production.png" alt="Production">
+                    <h4>A-Z Production</h4>
+                    <p>Just bring your idea. We'll do everything else. From concepts, to deliverables to final render.</p>
+                </div>
+                <div class="col-4 text-center reasons">
+                    <img class="img-fluid" src="img/creativity.png" alt="Creativity">
+                    <h4>Creativity on Top</h4>
+                    <p>Writers, entrepreneurs, designers, animators, we're ready to start brainstorming on your big video idea.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Our Portfolio</h2>
+                </div>
+            </div>
+            <ul class="nav portfolio-nav row" id="myTab" role="tablist">
+                <li class="col-2"><a class="active" id="motion-tab" data-toggle="tab" role="tab" aria-controls="motion" aria-selected="true" href="#motion">Motion</a></li>
+                <li class="col-2"><a id="whiteboard-tab" data-toggle="tab" role="tab" aria-controls="whiteboard" aria-selected="false" href="#whiteboard">Whiteboard</a></li>
+                <li class="col-2"><a id="animatedart-tab" data-toggle="tab" role="tab" aria-controls="animatedart" aria-selected="false" href="#animatedart">Animated Art</a></li>
+                <li class="col-2"><a id="finance-tab" data-toggle="tab" role="tab" aria-controls="finance" aria-selected="false" href="#finance">Finance</a></li>
+                <li class="col-2"><a id="healthcare-tab" data-toggle="tab" role="tab" aria-controls="healthcare" aria-selected="false" href="#healthcare">Healthcare</a></li>
+                <li class="col-2"><a id="education-tab" data-toggle="tab" role="tab" aria-controls="education" aria-selected="false" href="#education">Education</a></li>
+            </ul>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="motion" role="tabpanel" aria-labelledby="motion-tab">
+                    <div class="row portfolio">
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>MindSeeker</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>JetPay Spanish</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>Akamai in 2020</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-12 text-center portfolio__more">
+                            <a href="#" class="main-btn">More examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="whiteboard" role="tabpanel" aria-labelledby="whiteboard-tab">
+                    <div class="row portfolio">
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>MindSeeker</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>JetPay Spanish</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>Akamai in 2020</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-12 text-center portfolio__more">
+                            <a href="#" class="main-btn">More examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="animatedart" role="tabpanel" aria-labelledby="animatedart-tab">
+                    <div class="row portfolio">
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>MindSeeker</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>JetPay Spanish</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>Akamai in 2020</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-12 text-center portfolio__more">
+                            <a href="#" class="main-btn">More examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="finance" role="tabpanel" aria-labelledby="finance-tab">
+                    <div class="row portfolio">
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>MindSeeker</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>JetPay Spanish</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>Akamai in 2020</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-12 text-center portfolio__more">
+                            <a href="#" class="main-btn">More examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="healthcare" role="tabpanel" aria-labelledby="healthcare-tab">
+                    <div class="row portfolio">
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>MindSeeker</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>JetPay Spanish</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>Akamai in 2020</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-12 text-center portfolio__more">
+                            <a href="#" class="main-btn">More examples</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                    <div class="row portfolio">
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>MindSeeker</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>JetPay Spanish</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a class="portfolio__thumbnail" href="#">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                                <div class="portfolio__play">
+                                    <img src="img/play-icon.png" alt="Play Video">
+                                    <p>Watch Video</p>
+                                </div>
+                            </a>
+                            <h3>Akamai in 2020</h3>
+                            <p>Explainer of software product</p>
+                        </div>
+                        <div class="col-12 text-center portfolio__more">
+                            <a href="#" class="main-btn">More examples</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h2>From Fortune 50 to Ma’ and Pa</h2>
+                    <p>There companies trust us with their videos...</p>
+                </div>
+            </div>
+            <div class="row comapnies align-items-center">
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-zeeto.png" alt="Zeeto Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-payteller.png" alt="Payteller Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-traffic.png" alt="Traffic Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-yp.png" alt="YP Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-ngage.png" alt="Ngage Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-labstar.png" alt="Labstar Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-akamai.png" alt="Akami Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-bels.png" alt="Ballstaedt Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-bistudio.png" alt="Bistudio Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-pattient.png" alt="Patient Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-milis.png" alt="Milestone Logo">
+                </div>
+                <div class="col-3 text-center">
+                    <img class="img-fluid" src="img/companies/icolor-world.png" alt="World Logo">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
