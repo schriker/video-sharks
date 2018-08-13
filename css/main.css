@@ -528,6 +528,46 @@ input[type="text"]:focus {
   margin: 0 0 30px 0;
 }
 
+.process-circlce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 729px;
+  width: 729px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 0 230px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../img/process-bg.png");
+}
+
+.process-circlce p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+.process-circlce__item {
+  -webkit-transform: translate(-50%, -50%) rotate(135deg) translate(364.5px) rotate(-135deg);
+          transform: translate(-50%, -50%) rotate(135deg) translate(364.5px) rotate(-135deg);
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #1FDB84;
+}
+
 .comapnies {
   margin: 40px 0 0 0;
 }

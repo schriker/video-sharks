@@ -22,6 +22,10 @@ $input-border-green:  #AEFDD9;
     background-color: $main-green;
 }
 
+@mixin circle-transform($angle, $width) {
+    transform: translate(-50%, -50%) rotate($angle) translate($width / 2) rotate(-$angle);
+}
+
 body {
     font-size: 16px;
     line-height: 30px;
@@ -472,6 +476,35 @@ input[type="text"]:focus {
     img {
         height: 160px;
         margin: 0 0 30px 0;
+    }
+}
+
+.process-circlce {
+    display: flex;
+    height: 729px;
+    width: 729px;
+    position: relative;
+    align-items: center;
+    margin: 80px 0 230px 0;
+    justify-content: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url('../img/process-bg.png');
+    p {
+        flex: 0 0 50%;
+        font-size: 24px;
+        line-height: 35px;
+        font-weight: 600;
+    }
+    &__item {
+        @include circle-transform(135deg, 729px);
+        top: 50%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: $main-green;
     }
 }
 
