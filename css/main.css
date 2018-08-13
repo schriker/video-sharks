@@ -130,6 +130,10 @@ input[type="text"]:focus {
   background-image: url("../img/hero-bg.jpg");
 }
 
+.hero--footer {
+  padding: 135px 0 30px 0;
+}
+
 .gradient-bg {
   padding: 0 0 80px 0;
   background-size: 100vw;
@@ -233,6 +237,16 @@ input[type="text"]:focus {
   color: #031D5B;
 }
 
+.contact-form__details--large {
+  margin: 0 0 50px 0;
+}
+
+.contact-form__details--large p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
 .contact-form__phone {
   font-size: 24px;
   font-weight: 600;
@@ -241,9 +255,17 @@ input[type="text"]:focus {
 }
 
 .contact-form__phone img {
-  max-width: 28px;
-  max-height: 28px;
+  height: 28px;
   margin: 0 10px 0 0;
+}
+
+.contact-form__phone--large {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.contact-form__phone--large img {
+  height: 39px;
 }
 
 .contact-form__avatar {
@@ -254,9 +276,13 @@ input[type="text"]:focus {
   height: 76px;
 }
 
-.contact-form__avatar--large {
-  max-width: 135px;
-  max-height: 143px;
+.contact-form__avatar--large img {
+  height: 120px;
+  margin: 0 40px 0 0;
+}
+
+.contact-form--footer {
+  padding: 50px 120px;
 }
 
 .quote {
@@ -499,6 +525,7 @@ input[type="text"]:focus {
 
 .our-process img {
   height: 160px;
+  margin: 0 0 30px 0;
 }
 
 .comapnies {
@@ -512,5 +539,15 @@ input[type="text"]:focus {
 
 .comapnies img {
   max-height: 106px;
+}
+
+.footer {
+  color: #fff;
+  margin: 45px 0 0 0;
+}
+
+.footer img {
+  height: 46px;
+  margin: 0 25px 0 0;
 }
 /*# sourceMappingURL=main.css.map */

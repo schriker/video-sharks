@@ -151,6 +151,9 @@ input[type="text"]:focus {
     background-repeat: no-repeat;
     background-position: top center;
     background-image: url('../img/hero-bg.jpg');
+    &--footer {
+        padding: 135px 0 30px 0;
+    }
 }
 
 .gradient-bg {
@@ -232,6 +235,14 @@ input[type="text"]:focus {
             margin: 0 0 7px 0;
             color: $text-dark-blue;
         }
+        &--large {
+            margin: 0 0 50px 0;
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 35px;
+            }
+        }
     }
     &__phone {
         font-size: 24px;
@@ -239,9 +250,15 @@ input[type="text"]:focus {
         color: $main-green;
         white-space: nowrap;
         img {
-            max-width: 28px;
-            max-height: 28px;
+            height: 28px;
             margin: 0 10px 0 0;
+        }
+        &--large {
+            font-size: 32px;
+            font-weight: 700;
+            img {
+                height: 39px;
+            }
         }
     }
     &__avatar {
@@ -250,9 +267,14 @@ input[type="text"]:focus {
             height: 76px;
         }
         &--large {
-            max-width: 135px;
-            max-height: 143px;
+            img {
+                height: 120px;
+                margin: 0 40px 0 0;
+            }
         }
+    }
+    &--footer {
+        padding: 50px 120px;
     }
 }
 
@@ -449,6 +471,7 @@ input[type="text"]:focus {
 .our-process {
     img {
         height: 160px;
+        margin: 0 0 30px 0;
     }
 }
 
@@ -460,5 +483,14 @@ input[type="text"]:focus {
     }
     img {
         max-height: 106px;
+    }
+}
+
+.footer {
+    color: $white;
+    margin: 45px 0 0 0;
+    img {
+        height: 46px;
+        margin: 0 25px 0 0; 
     }
 }
