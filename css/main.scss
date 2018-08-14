@@ -482,10 +482,10 @@ input[type="text"]:focus {
 .process-circlce {
     display: flex;
     height: 729px;
-    width: 729px;
+    max-width: 729px;
     position: relative;
     align-items: center;
-    margin: 80px 0 230px 0;
+    margin: 100px 0 200px 0;
     justify-content: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -498,13 +498,49 @@ input[type="text"]:focus {
         font-weight: 600;
     }
     &__item {
-        @include circle-transform(135deg, 729px);
         top: 50%;
         left: 50%;
-        width: 50px;
-        height: 50px;
+        display: flex;
         position: absolute;
-        background-color: $main-green;
+        align-items: center;
+        flex-direction: column;
+        h4 {
+            margin: 20px 0 0 0;
+        }
+        &--deg20 {
+            @include circle-transform(20deg, 729px);
+        }
+        &--deg65 {
+            @include circle-transform(65deg, 729px);
+        }
+        &--deg115 {
+            @include circle-transform(115deg, 729px);
+        }
+        &--deg160 {
+            @include circle-transform(160deg, 729px);
+        }
+        &--deg200 {
+            @include circle-transform(200deg, 729px);
+        }
+        &--deg245 {
+            @include circle-transform(245deg, 729px);
+        }
+        &--deg295 {
+            @include circle-transform(295deg, 729px);
+        }
+        &--deg340 {
+            @include circle-transform(340deg, 729px);
+        }
+    }
+    &__icon {
+        width: 123px;
+        height: 123px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        box-shadow: 0 8px 34px 0 rgba(217,223,220,0.6);
     }
 }
 
