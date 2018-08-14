@@ -14,7 +14,7 @@ $(function() {
         dotsContainer: '.customers__dots'
     });
 
-    $(".owl-item").addClass("col");
+    // $(".owl-item").addClass("col");
 
     var owl = $('.owl-carousel');
     owl.owlCarousel();
