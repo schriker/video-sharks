@@ -210,6 +210,19 @@ input[type="text"]:focus {
         list-style: none;
         font-weight: 700;
         margin: 35px 0 45px 0;
+        li {
+            &::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                line-height: 30px;
+                margin: 0 15px 0 0;
+                display: inline-block;
+                vertical-align: middle;
+                background-size: 100% 100%;
+                background-image: url("../img/check.png");
+            }
+        }
     }
     &__buttons {
         a {
@@ -381,7 +394,8 @@ input[type="text"]:focus {
             color: $main-green;
             text-transform: uppercase;
             transition: .2s ease all;
-            &.active {
+            &.active,
+            &:hover {
                 background-color: $white;
             }
         }
@@ -482,7 +496,7 @@ input[type="text"]:focus {
 .process-circlce {
     display: flex;
     height: 729px;
-    max-width: 729px;
+    width: 729px;
     position: relative;
     align-items: center;
     margin: 100px 0 200px 0;
@@ -555,11 +569,128 @@ input[type="text"]:focus {
     }
 }
 
+.customers {
+    display: flex;
+    margin: 50px 0 0 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        margin: 0 0 40px 0;
+    }
+    h3 {
+        margin: 0;
+    }
+    p {
+        width: 100%;
+        padding: 0 80px;
+        position: relative;
+        &::before {
+            top: -25px;
+            left: -10px;
+            content: "";
+            width: 76px;
+            height: 57px;
+            display: block;
+            position: absolute;
+            background-size: 100% 100%;
+            background-image: url("../img/quote-icon.png");
+        }
+    }
+    span {
+        font-size: 18px;
+
+    }
+    &__photo {
+        width: 137px;
+        height: 137px;
+    }
+    &__dots {
+        margin:20px 0 50px 0;
+    }
+}
+
+.rating {
+    margin: 20px 0 40px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    li {
+        list-style: none;
+        margin: 0 10px 0 0;
+        &:last-of-type {
+            margin: 0;
+        }
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-size: 100% 100%;
+            background-image: url("../img/star.png");
+        }
+        &.grey {
+            &::before {
+                background-image: url("../img/star-grey.png"); 
+            }
+        }
+    }
+}
+
 .footer {
     color: $white;
     margin: 45px 0 0 0;
     img {
         height: 46px;
         margin: 0 25px 0 0; 
+    }
+}
+
+// Owl Carousel Styles 
+
+.owl-dot {
+    border: 0;
+    outline: 0;
+    background: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    line-height: 12px;
+    &:focus {
+        outline: 0;
+    }
+    span {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: #E4F7EE;
+        border: 1px solid $input-border-green;
+    }
+    &.active {
+        span {
+            background-color: #1FDB84;
+            border: 1px solid #AEFDD9;
+        }
+    }
+}
+
+.carousel-arrow {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    line-height: 80px;
+    text-align: center;
+    color: $main-green;
+    border-radius: 50%;
+    vertical-align: middle;
+    background-color: $white;
+    transition: .2s ease all;
+    box-shadow: 0 8px 34px 0 rgba(209,209,209,0.3);
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 8px 34px 0 rgba(209,209,209,0.6);
     }
 }
