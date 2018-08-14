@@ -677,6 +677,13 @@ input[type="text"]:focus {
     }
 }
 
+.owl-stage {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: box;
+    }
+
 .carousel-arrow {
     width: 80px;
     height: 80px;
