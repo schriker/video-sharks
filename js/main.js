@@ -12,7 +12,7 @@ $(window).on('load', function() {
     // Carousel Setup
     $(".customers").owlCarousel({
         items: 1,
-        loop: false,
+        loop: true,
         autoplay: false,
         dotsContainer: '.customers__dots'
     });
