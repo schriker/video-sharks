@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     // Pricing Boxes
     var pricing = $(".pricing");
 
@@ -6,6 +6,9 @@ $(function() {
         pricing.removeClass("pricing--active");
         $(this).addClass("pricing--active");
     });
+});
+
+$(window).on('load', function() {
     // Carousel Setup
     $(".customers").owlCarousel({
         items: 1,
@@ -25,5 +28,5 @@ $(function() {
     
     $(".prev").click(function(){
         owl.trigger('prev.owl.carousel');
-});
+    });
 });
