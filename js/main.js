@@ -6,6 +6,17 @@ $(document).ready(function() {
         pricing.removeClass("pricing--active");
         $(this).addClass("pricing--active");
     });
+    
+    // Smooth Scroll
+    $("nav a").click(function(event) {
+        event.preventDefault();
+
+        if(this.hash !== "")  {
+            $('html, body').stop(true).animate({
+                scrollTop: $(this.hash).offset().top
+            },400);   
+        } 
+    });
 });
 
 $(window).on('load', function() {
