@@ -9,12 +9,18 @@ $(document).ready(function() {
 });
 
 $(window).on('load', function() {
-    // Carousel Setup
+    // Carousel setup
+
+    function aosInit() {
+        AOS.init();
+}
+
     $(".customers").owlCarousel({
         items: 1,
         loop: true,
         autoplay: false,
-        dotsContainer: '.customers__dots'
+        dotsContainer: '.customers__dots',
+        onInitialized: aosInit
     });
 
     $(".owl-item").addClass("col");
