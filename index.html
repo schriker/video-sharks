@@ -11,12 +11,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/lity.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- JS Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/jquery-3.3.1.min.js"></script>
     <script defer src="js/owl.carousel.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
+    <script defer src="js/lity.min.js"></script>
     <script defer src="js/main.js"></script>
 </head>
 <body>
@@ -52,7 +54,10 @@
                     </ul>
                     <div class="d-flex align-items-center page-header__buttons">
                         <a class="main-btn main-btn--medium-spacing" href="#">Let’s do it!</a>
-                        <a href="#"><img src="img/play-icon.png" alt="Play Icon"> Watch How it Works</a>
+                        <a href="#inline" data-lity><img src="img/play-icon.png" alt="Play Icon"> Watch How it Works</a>
+                        <div id="inline" class="lity-hide">
+                            <script src="https://fast.wistia.com/embed/medias/l9h8kh5rsi.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;z-index:999"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_l9h8kh5rsi videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-5">
@@ -141,7 +146,7 @@
                 <div class="tab-pane fade show active" id="motion" role="tabpanel" aria-labelledby="motion-tab">
                     <div class="row portfolio">
                         <div class="col-4 text-center">
-                            <a class="portfolio__thumbnail" href="#">
+                            <a data-lity class="portfolio__thumbnail" href="https://vimeo.com/276254368">
                                 <img class="img-fluid" src="img/video-thumbnail-1.jpg" alt="MindSeeker">
                                 <div class="portfolio__play">
                                     <img src="img/play-icon.png" alt="Play Video">
@@ -152,8 +157,8 @@
                             <p>Explainer of software product</p>
                         </div>
                         <div class="col-4 text-center">
-                            <a class="portfolio__thumbnail" href="#">
-                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="MindSeeker">
+                            <a data-lity class="portfolio__thumbnail" href="https://vimeo.com/192389379">
+                                <img class="img-fluid" src="img/video-thumbnail-2.jpg" alt="JetPay Spanish">
                                 <div class="portfolio__play">
                                     <img src="img/play-icon.png" alt="Play Video">
                                     <p>Watch Video</p>
@@ -163,8 +168,8 @@
                             <p>Explainer of software product</p>
                         </div>
                         <div class="col-4 text-center">
-                            <a class="portfolio__thumbnail" href="#">
-                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="JetPay Spanish">
+                            <a data-lity class="portfolio__thumbnail" href="https://vimeo.com/162597805">
+                                <img class="img-fluid" src="img/video-thumbnail-3.jpg" alt="Akamai in 2020">
                                 <div class="portfolio__play">
                                     <img src="img/play-icon.png" alt="Play Video">
                                     <p>Watch Video</p>

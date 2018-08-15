@@ -759,6 +759,11 @@ input[type="text"]:focus {
   margin: 0 25px 0 0;
 }
 
+#inline {
+  background: #fff;
+  width: 700px;
+}
+
 .owl-dot {
   border: 0;
   outline: 0;
