@@ -58,7 +58,8 @@ h4 {
 
 // Form Styles 
 
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
     height: 42px;
 }
 
@@ -72,7 +73,8 @@ input[type="submit"]:hover {
 }
 
 textarea,
-input[type="text"] {
+input[type="text"],
+input[type="email"] {
     width: 100%;
     outline: none;
     padding: 7px 20px;
