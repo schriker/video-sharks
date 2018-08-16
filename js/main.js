@@ -1,3 +1,26 @@
+function hideElements(container, button, itemsToShow) {
+    $(container).each(function(){
+
+        var itemsInPortfolio = $(this).children().length;
+
+        $(this).children().each(function(index, element){
+            if (index >= itemsToShow && index < itemsInPortfolio - 1) {
+                $(element).addClass("hide");
+            }
+        });
+    })
+
+    // Show More
+
+    $(button).on("click", function(e) {
+       e.preventDefault();
+       $(this).closest(container).children().each(function() {
+           $(this).removeClass("hide");
+        });
+        $(this).parent().remove();
+    });
+}
+
 $(document).ready(function() {
     // Pricing Boxes
     var pricing = $(".pricing");
@@ -19,28 +42,8 @@ $(document).ready(function() {
     });
     
     // Hide Elements In Portfolio
-
-    $(".portfolio").each(function(){
-
-        var itemsInPortfolio = $(this).children().length;
-        var itemsToShow = 3;
-
-        $(this).children().each(function(index, element){
-            if (index >= itemsToShow && index < itemsInPortfolio - 1) {
-                $(element).addClass("hide");
-            }
-        });
-    })
-
-    // Show More
-
-    $(".portfolio__more a").on("click", function(e) {
-       e.preventDefault();
-       $(this).closest(".portfolio").children().each(function() {
-           $(this).removeClass("hide");
-        });
-        $(this).parent().remove();
-    });
+    hideElements(".portfolio", ".portfolio__more a", 3);
+    hideElements(".mobile-portfolio", ".portfolio__more--mobile a", 1);
 });
 
 $(window).on('load', function() {
@@ -73,20 +76,22 @@ $(window).on('load', function() {
 
 
     // Script For Mobile Only Carousels
+
     var mobileCarousels = [
         $('.choose-carousel'),
-        $('.pricing-carousel'),
-        $('.portfolio-carousel')
+        $('.pricing-carousel')
     ],
-        owlOptions = {
-            loop: false,
-            margin: 10,
-            responsive: {
-                0: {
-                    items: 1
-                }
+    owlOptions = {
+        loop: false,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
             }
-        };
+        }
+    };
+
+    $('.portfolio-carousel').owlCarousel(owlOptions);
 
     if ( $(window).width() < 768 ) {
         for(i=0; i < mobileCarousels.length; i++) {
