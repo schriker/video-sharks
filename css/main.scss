@@ -120,6 +120,15 @@ input[type="text"]:focus {
     }
 }
 
+.hide {
+    display: none;
+}
+
+#inline {
+    background: #fff;
+    width: 700px;
+}
+
 
 // Text Color Styles
 
@@ -268,6 +277,9 @@ input[type="text"]:focus {
         font-weight: 600;
         color: $main-green;
         white-space: nowrap;
+        a {
+            color: $main-green;
+        }
         img {
             height: 28px;
             margin: 0 10px 0 0;
@@ -653,16 +665,11 @@ input[type="text"]:focus {
     }
 }
 
-.hide {
-    display: none;
-}
-
-#inline {
-    background: #fff;
-    width: 700px;
-}
-
 // Owl Carousel Styles 
+
+.owl-dots {
+    text-align: center;
+}
 
 .owl-dot {
     border: 0;
@@ -691,6 +698,10 @@ input[type="text"]:focus {
     }
 }
 
+.owl-carousel.off {
+    display: flex;
+}
+
 .owl-stage {
     display: -webkit-box;
     display: -moz-box;
@@ -715,3 +726,57 @@ input[type="text"]:focus {
         box-shadow: 0 8px 34px 0 rgba(209,209,209,0.6);
     }
 }
+
+// Media Queries
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

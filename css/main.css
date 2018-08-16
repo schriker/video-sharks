@@ -98,6 +98,15 @@ input[type="text"]:focus {
   padding: 20px 45px;
 }
 
+.hide {
+  display: none;
+}
+
+#inline {
+  background: #fff;
+  width: 700px;
+}
+
 .text-light {
   color: #99A0B4;
 }
@@ -266,6 +275,10 @@ input[type="text"]:focus {
   font-weight: 600;
   color: #1FDB84;
   white-space: nowrap;
+}
+
+.contact-form__phone a {
+  color: #1FDB84;
 }
 
 .contact-form__phone img {
@@ -765,13 +778,8 @@ input[type="text"]:focus {
   margin: 0 25px 0 0;
 }
 
-.hide {
-  display: none;
-}
-
-#inline {
-  background: #fff;
-  width: 700px;
+.owl-dots {
+  text-align: center;
 }
 
 .owl-dot {
@@ -801,6 +809,12 @@ input[type="text"]:focus {
 .owl-dot.active span {
   background-color: #1FDB84;
   border: 1px solid #AEFDD9;
+}
+
+.owl-carousel.off {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .owl-stage {
