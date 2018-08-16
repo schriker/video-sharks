@@ -72,7 +72,7 @@ $(window).on('load', function() {
 
 
 
-
+    // Script For Mobile Only Carousels
     var mobileCarousels = [
         $('.choose-carousel'),
         $('.pricing-carousel'),
@@ -88,7 +88,7 @@ $(window).on('load', function() {
             }
         };
 
-    if ( $(window).width() < 854 ) {
+    if ( $(window).width() < 768 ) {
         for(i=0; i < mobileCarousels.length; i++) {
             var owlActive = mobileCarousels[i];
             owlActive.owlCarousel(owlOptions);
@@ -101,7 +101,7 @@ $(window).on('load', function() {
     }
 
     $(window).resize(function() {
-        if ( $(window).width() < 854 ) {
+        if ( $(window).width() < 768 ) {
             if ( $('.owl-carousel').hasClass('off') ) {
                 for(i=0; i < mobileCarousels.length; i++) {
                     var owlActive = mobileCarousels[i];

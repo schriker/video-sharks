@@ -32,6 +32,7 @@ body {
     color: $text-light;
     background-color: $white;
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -749,16 +750,118 @@ input[type="text"]:focus {
 
 
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .comapnies {
+        div {
+            padding: 20px 10px;
+        }
+    }
+}
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    h2 {
+        font-size: 18px;
+    }
+    .main-btn{
+        &--large-spacing {
+            padding: 20px 30px;
+        }
+    }
+    .main-content {
+        padding: 50px 0 100px 0;
+    }
+    .comapnies {
+        margin: 0;
+    }
+    .pricing {
+        padding: 25px 30px;
+        background-color: $white;
+        border-top: 3px solid $main-blue;
+        box-shadow: 0 7px 24px 0 rgba(83,83,83,0.1);
+        margin-bottom: 50px;
+        a {
+            opacity: 1;
+        }
+        &__coin {
+            opacity: 1;
+        }
+    }
+    .footer {
+        img {
+            margin: 0;
+        }
+    }
+    .j-center-mobile {
+        justify-content: center;
+    }
+    .text-center-mobile {
+        text-align: center;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    .contact-form {
+        &__avatar {
+            &--large {
+                img {
+                    margin: 0;
+                    height: 60px;
+                }
+            }
+        }
+        &__details {
+            &--large {
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+        &__phone {
+            &--large {
+                font-size: 24px;
+            }  
+        } 
+    }
+    .customers {
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {}
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+    .customers {
+        p {
+            padding: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .hide-lrg {
+        display: none;
+    }
+        
+    .contact-form {
+        padding: 20px 20px;
+        &__details {
+            flex-direction: column;
+        }
+        &__avatar {
+            margin: 0 0 20px 0;
+        }
+    }
+    .text-center-lrg {
+        text-align: center;
+    }
+
+}
 
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width

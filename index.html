@@ -30,7 +30,7 @@
                         <img class="img-fluid" src="img/nav-logo.png" alt="Video Sharks Logo">
                     </a>
                 </div>
-                <div class="col-9">
+                <div class="col-9 hide-mobile">
                     <nav>
                         <ul class="page-header__navigation">
                             <li><a href="#why-us">Why Us</a></li>
@@ -46,14 +46,14 @@
             <div class="row justify-content-between align-items-center page-header__content">
                 <div class="col-6">
                     <h2>Small Studio. Big Passion. <br> Your diamond in the rough.</h2>
-                    <p>Let's brainstorm, call now. If I can't immediately talk, I'll ring you back within a few hours!</p>
-                    <ul class="page-header__list">
+                    <p class="hide-mobile">Let's brainstorm, call now. If I can't immediately talk, I'll ring you back within a few hours!</p>
+                    <ul class="page-header__list hide-mobile">
                         <li>Meet your copywriter & producer.</li>
                         <li>8 years of experience, hundreds of videos.</li>
                         <li>Call Now, we only take on a few projects a month.</li>
                     </ul>
                     <div class="d-flex align-items-center page-header__buttons">
-                        <a class="main-btn main-btn--medium-spacing to-contact" href="#contact-us">Let’s do it!</a>
+                        <a class="main-btn main-btn--medium-spacing to-contact hide-mobile" href="#contact-us">Let’s do it!</a>
                         <a href="#inline" data-lity><img src="img/play-icon.png" alt="Play Icon"> Watch How it Works</a>
                         <div id="inline" class="lity-hide">
                             <script src="https://fast.wistia.com/embed/medias/l9h8kh5rsi.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;z-index:999"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_l9h8kh5rsi videoFoam=true" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
@@ -66,12 +66,12 @@
                             <div class="contact-form__avatar">
                                 <img src="img/user-avatar-1.png" alt="User Photo">
                             </div>
-                            <div>
+                            <div class="text-center-lrg">
                                 <p>Talk to your creative director, not a saleman!</p>
                                 <span class="contact-form__phone"><img src="img/contact-icon.png" alt="Phone Icon"><a href="tel:012345677">1-(800)-962-1668</a></span>
                             </div>
                         </div>
-                        <form>
+                        <form class="text-center-lrg">
                             <input required type="text" name="name-header" id="name-header" placeholder="Full Name">
                             <input required type="email" name="email-header" id="email-header" placeholder="Email">
                             <textarea required name="message-header" id="message-header" cols="30" rows="2" placeholder="Message"></textarea>
@@ -103,23 +103,23 @@
                 </div>
             </div>
             <div id="why-us" class="row justify-content-center">
-                <div class="col-7 text-center">
+                <div class="col-12 col-md-12 text-center">
                     <h2>Why you should choose us?</h2>
                     <p>Small creative studio focused on videos that increase revenue.  From start to finish planning out how to artistically capture attention, while using marketing analytics and logic to find ROI.  Work as an extension of your team and mind.</p>
                 </div>
             </div>
             <div data-aos="fade" data-aos-offset="350" class="row justify-content-center owl-carousel choose-carousel">
-                <div class="col-4 text-center reasons">
+                <div class="col-md-4 col-12 text-center reasons">
                     <img class="img-fluid" src="img/unlimited-revisions.png" alt="Unlimited Revisions">
                     <h4>Unlimited Revisions</h4>
                     <p>Creativity requires flexibility. Our process accommodates the fact that. Don't stress, we've got you covered.</p>
                 </div>
-                <div class="col-4 text-center reasons">
+                <div class="col-md-4 col-12 text-center reasons">
                     <img class="img-fluid" src="img/production.png" alt="Production">
                     <h4>A-Z Production</h4>
                     <p>Just bring your idea. We'll do everything else. From concepts, to deliverables to final render.</p>
                 </div>
-                <div class="col-4 text-center reasons">
+                <div class="col-md-4 col-12 text-center reasons">
                     <img class="img-fluid" src="img/creativity.png" alt="Creativity">
                     <h4>Creativity on Top</h4>
                     <p>Writers, entrepreneurs, designers, animators, we're ready to start brainstorming on your big video idea.</p>
@@ -588,7 +588,7 @@
                 </div>
                 <div class="pricing__wrapper col-12">
                     <div data-aos="fade" data-aos-offset="350" class="row owl-carousel pricing-carousel">
-                        <div class="col-4">
+                        <div class="col-md-4 col-12">
                             <div class="pricing">
                                 <h3><img class="img-fluid pricing__coin" src="img/coin-3.png" alt="Coin Icon">Whiteboard</h3>
                                 <span class="pricing__price-tag">$2500</span>
@@ -597,7 +597,7 @@
                                 <a class="main-btn main-btn--large-spacing to-contact" href="#contact-us">Let’s do it now!</a>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-12">
                             <div class="pricing pricing--active">
                                 <h3><img class="img-fluid pricing__coin" src="img/coin-2.png" alt="Coin Icon">Entry Level</h3>
                                 <span class="pricing__price-tag">$5000</span>
@@ -606,7 +606,7 @@
                                 <a class="main-btn main-btn--large-spacing to-contact" href="#contact-us">Let’s do it now!</a>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-12">
                             <div class="pricing">
                                 <h3><img class="img-fluid pricing__coin" src="img/coin-1.png" alt="Coin Icon">Animated Art</h3>
                                 <span class="pricing__price-tag">$7500</span>
@@ -618,14 +618,14 @@
                     </div>
                 </div>
             </div>
-            <div id="our-process" class="row justify-content-center">
+            <div id="our-process" class="row justify-content-center hide-mobile">
                 <div class="col-6 text-center our-process">
                     <img class="img-fluid" src="img/our-process.png" alt="Our Process">
                     <h2>Our Process</h2>
                     <p><b>4 to 6 weeks</b> is what it takes to take your idea (no matter how basic) into fully finished video like the ones you can see on this page.</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center hide-mobile">
                 <div class="col-8 d-flex justify-content-center">
                     <div class="process-circlce text-center">
                         <p>Creating more ambience in your video by cusomizing the music and sound bed.</p>
@@ -683,44 +683,44 @@
             <div id="clients" class="row">
                 <div class="col text-center">
                     <h2>From Fortune 50 to Ma’ and Pa</h2>
-                    <p>There companies trust us with their videos...</p>
+                    <p class="hide-mobile">There companies trust us with their videos...</p>
                 </div>
             </div>
             <div class="row comapnies align-items-center">
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-zeeto.png" alt="Zeeto Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-payteller.png" alt="Payteller Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-traffic.png" alt="Traffic Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-yp.png" alt="YP Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-ngage.png" alt="Ngage Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-labstar.png" alt="Labstar Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-akamai.png" alt="Akami Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-bels.png" alt="Ballstaedt Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-bistudio.png" alt="Bistudio Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-pattient.png" alt="Patient Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-milis.png" alt="Milestone Logo">
                 </div>
-                <div class="col-3 text-center">
+                <div class="col-4 col-md-3 text-center">
                     <img class="img-fluid" src="img/companies/icolor-world.png" alt="World Logo">
                 </div>
             </div>
@@ -728,12 +728,12 @@
     </div>
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-1 align-self-center">
+            <div class="col-1 align-self-center hide-lrg">
                 <div class="carousel-arrow prev">
                     <i class="fas fa-chevron-left"></i>
                 </div>
             </div>
-            <div class="col-9 owl-carousel customers"> 
+            <div class="col-xl-10 col-12 owl-carousel customers"> 
                 <div>
                     <h2><img src="img/customers.svg" alt="Customers"> Customers’ Corner</h2>
                     <p>VideoSharks were fantastic in developing our explanation videos. They were flexible with our ever changing storyboard and always delivered quality product within our timeline. Their videos were able to easily convey our message & explain the capabilities of our technology!</p>
@@ -763,7 +763,7 @@
                     <span>CEO at JALYDEW</span>
                 </div>
             </div>
-            <div class="col-1 align-self-center">
+            <div class="col-1 align-self-center hide-lrg">
                 <div class="carousel-arrow next">
                     <i class="fas fa-chevron-right"></i>
                 </div>
@@ -782,28 +782,28 @@
                                 <div class="contact-form__avatar contact-form__avatar--large">
                                     <img src="img/user-avatar-1.png" alt="User Photo">
                                 </div>
-                                <div>
+                                <div class="text-center-lrg ">
                                     <p>Quick. Contact us now, <br> while that idea is fresh in your mind!</p>
-                                    <span class="contact-form__phone contact-form__phone--large"><img src="img/contact-icon.png" alt="Phone Icon"><a href="tel:012345677">1-(800)-962-1668</a></span>
+                                    <span class="contact-form__phone contact-form__phone--large"><img class="hide-mobile" src="img/contact-icon.png" alt="Phone Icon"><a href="tel:012345677">1-(800)-962-1668</a></span>
                                 </div>
                             </div>
                             <form class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <input required type="text" name="name" id="name" placeholder="Full Name">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <input required type="text" name="phone" id="phone" placeholder="Phone Number">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <input required type="email" name="email" id="email" placeholder="Email">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <input type="text" name="company" id="company" placeholder="Company (if applicable)">
                                 </div>
                                 <div class="col-12">
                                     <textarea required name="message" id="message" cols="30" rows="4" placeholder="Describe your porject in few words"></textarea>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 text-center-lrg">
                                     <input class="main-btn" type="submit" value="Send message">
                                 </div>
                             </form>
@@ -811,11 +811,11 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-11 d-flex align-items-center footer">
+                <div class="col-11 d-flex align-items-center footer j-center-mobile">
                     <a class="footer__logo" href="#">
                         <img class="img-fluid" src="img/nav-logo.png" alt="Video Sharks Logo">
                     </a>
-                    <div>
+                    <div class="hide-mobile">
                         © 2018 Copyrights by VideoSharks. All rights reserved
                     </div>
                 </div>
