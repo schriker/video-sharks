@@ -89,7 +89,8 @@ input[type="email"] {
 }
 
 textarea:focus,
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus {
     background-color: $white;
     border: 1px solid $main-green;
 }
@@ -117,7 +118,7 @@ input[type="text"]:focus {
     &--large-spacing {
         font-size: 18px;
         line-height: 21px;
-        padding: 20px 45px;
+        padding: 20px;
     }
 }
 
@@ -461,7 +462,7 @@ input[type="text"]:focus {
 .pricing {
     height: 100%;
     display: flex;
-    padding: 50px 60px;
+    padding: 50px;
     text-align: center;
     flex-direction: column;
     transition: .2s ease all;
@@ -760,9 +761,24 @@ input[type="text"]:focus {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+
+    .container-fluid {
+        padding: 0;
+    }
+    .hero--footer {
+        padding: 135px 0 30px 0;
+    }
+    .gradient-bg {
+        padding: 0 0 80px 0;
+    }
     h2 {
         font-size: 18px;
     }
+    .big-text-mobile {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
     .main-btn{
         &--large-spacing {
             padding: 20px 30px;
@@ -792,6 +808,37 @@ input[type="text"]:focus {
             margin: 0;
         }
     }
+
+    .page-header__buttons a {
+        margin: 30px 0 50px 0;
+    }
+
+    .quote {
+        padding: 20px 20px;
+    }
+    .quote__details::after {
+        display: none;
+    }
+
+    .quote__content p {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .quote__author {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        img {
+            height: 70px;
+            margin: 20px 0;
+        }
+    }
+
+    .quote__content p::before {
+        display: none;
+    }
+
     .j-center-mobile {
         justify-content: center;
     }
@@ -831,7 +878,38 @@ input[type="text"]:focus {
 }
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .process-circlce{
+        width: 600px;
+        height: 600px;
+        &__item {
+            &--deg20 {
+                @include circle-transform(20deg, 600px);
+            }
+            &--deg65 {
+                @include circle-transform(65deg, 600px);
+            }
+            &--deg115 {
+                @include circle-transform(115deg, 600px);
+            }
+            &--deg160 {
+                @include circle-transform(160deg, 600px);
+            }
+            &--deg200 {
+                @include circle-transform(200deg, 600px);
+            }
+            &--deg245 {
+                @include circle-transform(245deg, 600px);
+            }
+            &--deg295 {
+                @include circle-transform(295deg, 600px);
+            }
+            &--deg340 {
+                @include circle-transform(340deg, 600px);
+            }
+        }
+    }
+}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
@@ -876,7 +954,29 @@ input[type="text"]:focus {
 @media (min-width: 576px) and (max-width: 767.98px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .page-header__buttons a:first-of-type {
+        margin: 0 30px 0 0;
+    }
+    .main-btn--medium-spacing {
+        padding: 15px 20px;
+    }
+    .quote {
+        padding: 45px 45px;
+    }
+    .pricing {
+        h3 {
+            font-size: 22px;
+        }
+        padding: 20px 20px;
+        &__coin {
+            height: 30px;
+        }
+    }
+    .main-btn--large-spacing {
+        padding:20px 0;
+    }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {}
