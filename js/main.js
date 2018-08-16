@@ -8,7 +8,7 @@ $(document).ready(function() {
     });
     
     // Smooth Scroll
-    $("nav a, #to-contact").click(function(event) {
+    $("nav a, .to-contact").click(function(event) {
         event.preventDefault();
 
         if(this.hash !== "")  {
