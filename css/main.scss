@@ -407,6 +407,9 @@ input[type="text"]:focus {
         max-height: 350px;
         transition: all .2s ease; 
     }
+    p {
+        margin: 0 0 50px 0;
+    }
     &__thumbnail {
         display: block;
         margin: 0 0 30px 0;
@@ -436,7 +439,7 @@ input[type="text"]:focus {
         }
     }
     &__more {
-        margin: 30px 0 100px 0;
+        margin: 10px 0 100px 0;
     }
 }
 
@@ -646,6 +649,10 @@ input[type="text"]:focus {
         height: 46px;
         margin: 0 25px 0 0; 
     }
+}
+
+.hide {
+    display: none;
 }
 
 #inline {

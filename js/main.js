@@ -17,11 +17,34 @@ $(document).ready(function() {
             },400);   
         } 
     });
+    
+    // Hide Elements In Portfolio
+
+    $(".portfolio").each(function(){
+
+        var itemsInPortfolio = $(this).children().length;
+        var itemsToShow = 3;
+
+        $(this).children().each(function(index, element){
+            if (index >= itemsToShow && index < itemsInPortfolio - 1) {
+                $(element).addClass("hide");
+            }
+        });
+    })
+
+    // Show More
+
+    $(".portfolio__more a").on("click", function(e) {
+       e.preventDefault();
+       $(this).closest(".portfolio").children().each(function() {
+           $(this).removeClass("hide");
+        });
+        $(this).parent().remove();
+    });
 });
 
 $(window).on('load', function() {
     // Carousel setup
-
     function aosInit() {
         AOS.init();
 }
