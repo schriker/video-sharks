@@ -50,31 +50,7 @@ $(window).on('load', function() {
     // Carousel setup
     function aosInit() {
         AOS.init();
-}
-
-    $(".customers").owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: false,
-        dotsContainer: '.customers__dots',
-        onInitialized: aosInit
-    });
-
-    $(".owl-item").addClass("col");
-
-    var cusomersOwl = $('.customers');
-    cusomersOwl.owlCarousel();
-
-    $(".next").click(function(){
-        cusomersOwl.trigger('next.owl.carousel');
-    });
-    
-    $(".prev").click(function(){
-        cusomersOwl.trigger('prev.owl.carousel');
-    });
-
-
-
+    }
     // Script For Mobile Only Carousels
 
     var mobileCarousels = [
@@ -123,5 +99,25 @@ $(window).on('load', function() {
                 }
             }
         }
+    });
+    $(".customers").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: false,
+        dotsContainer: '.customers__dots',
+        onInitialized: aosInit
+    });
+
+    $(".owl-item").addClass("col");
+
+    var cusomersOwl = $('.customers');
+    cusomersOwl.owlCarousel();
+
+    $(".next").click(function(){
+        cusomersOwl.trigger('next.owl.carousel');
+    });
+    
+    $(".prev").click(function(){
+        cusomersOwl.trigger('prev.owl.carousel');
     });
 });
