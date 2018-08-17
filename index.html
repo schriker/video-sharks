@@ -22,6 +22,21 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
+    <div id="submitConfirm" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Success!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Your message was send!</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid hero">
         <div class="container page-header">
             <header class="row justify-content-between align-items-center">
@@ -72,9 +87,9 @@
                             </div>
                         </div>
                         <form class="text-center-lrg">
-                            <input required type="text" name="name-header" id="name-header" placeholder="Full Name">
-                            <input required type="email" name="email-header" id="email-header" placeholder="Email">
-                            <textarea required name="message-header" id="message-header" cols="30" rows="2" placeholder="Message"></textarea>
+                            <input required type="text" name="name" id="name" placeholder="Full Name">
+                            <input required type="email" name="email" id="email" placeholder="Email">
+                            <textarea required name="message" id="message" cols="30" rows="2" placeholder="Message"></textarea>
                             <input class="main-btn" type="submit" value="Send Now">
                         </form>
                     </div>
