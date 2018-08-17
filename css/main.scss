@@ -382,8 +382,11 @@ input[type="email"]:focus {
 
 .portfolio-nav {
     margin: 35px 0 50px 0;
+    justify-content: center;
     li {
         padding: 0;
+        flex: 0 1 20%;
+        max-width: 20%;
         text-align: center;
         background-color: #F1FFF8;
         border-top: 1px solid #AEFDD9;

@@ -1,25 +1,25 @@
-function hideElements(container, button, itemsToShow) {
-    $(container).each(function(){
+// function hideElements(container, button, itemsToShow) {
+//     $(container).each(function(){
 
-        var itemsInPortfolio = $(this).children().length;
+//         var itemsInPortfolio = $(this).children().length;
 
-        $(this).children().each(function(index, element){
-            if (index >= itemsToShow && index < itemsInPortfolio - 1) {
-                $(element).addClass("hide");
-            }
-        });
-    })
+//         $(this).children().each(function(index, element){
+//             if (index >= itemsToShow && index < itemsInPortfolio - 1) {
+//                 $(element).addClass("hide");
+//             }
+//         });
+//     })
 
-    // Show More
+//     // Show More
 
-    $(button).on("click", function(e) {
-       e.preventDefault();
-       $(this).closest(container).children().each(function() {
-           $(this).removeClass("hide");
-        });
-        $(this).parent().remove();
-    });
-}
+//     $(button).on("click", function(e) {
+//        e.preventDefault();
+//        $(this).closest(container).children().each(function() {
+//            $(this).removeClass("hide");
+//         });
+//         $(this).parent().remove();
+//     });
+// }
 
 $(document).ready(function() {
     // Pricing Boxes
@@ -42,8 +42,8 @@ $(document).ready(function() {
     });
     
     // Hide Elements In Portfolio
-    hideElements(".portfolio", ".portfolio__more a", 3);
-    hideElements(".mobile-portfolio", ".portfolio__more--mobile a", 1);
+    // hideElements(".portfolio", ".portfolio__more a", 3);
+    // hideElements(".mobile-portfolio", ".portfolio__more--mobile a", 1);
 });
 
 $(window).on('load', function() {
