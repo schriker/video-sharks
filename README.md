@@ -4,7 +4,7 @@
 
 Landing page for VideoSharks 
 
-![Preview](preview.jpg)
+![Preview](preview-large.jpg)
 
 ## What I use?
 * [Bootstrap](https://getbootstrap.com/)
